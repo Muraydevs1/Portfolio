@@ -28,7 +28,7 @@ function Header() {
                     </a>
                 </div>
                 <p className='mt-6 text-gray-400 text-sm md:text-lg max-w-lg leading-relaxed text-center'>A level 300 computer science student with passion for developing modern react web apps for commercial businesses.</p>
-                <a href="https://drive.google.com/file/d/1R32iUUesb9UymYc9YGz3QoxxEAJcWzp8/view?usp=sharing"><button className='mt-6 px-5 py-2 bg-black text-white hover:bg-white hover hover:text-black hover:border hover:border-gray-400  dark:bg-white dark:text-black font-bold rounded-full dark:hover:bg-slate-900 dark:hover:text-white transition-all duration-400 hover:scale-105'>
+                <a href="https://drive.google.com/file/d/13hWsULFKeEIwW8sw_du3MI2YUiKUiy3x/view?usp=sharing"><button className='mt-6 px-5 py-2 bg-black text-white hover:bg-white hover hover:text-black hover:border hover:border-gray-400  dark:bg-white dark:text-black font-bold rounded-full dark:hover:bg-slate-900 dark:hover:text-white transition-all duration-400 hover:scale-105'>
                    View Resume
                 </button></a>
                 
