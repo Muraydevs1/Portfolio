@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from 'react';
-import Darkmode from './components/darkmode';
-import Header from './components/header';
-import Education from './components/education';
-import Projects from './components/projects';
-import Skills from './components/skills';
-import Footer from './components/footer';
-import Contact from './components/contact';
+import Header from './components/sections/header';
+import Education from './components/sections/education';
+import Skills from './components/sections/skills';
+import Footer from './components/layout/footer';
+import Navbar from './components/layout/navbar';
+import Portfolio from './components/sections/portfolio';
+import TextType from './components/effects/TextType';
+
+
 
 
 
@@ -32,12 +34,24 @@ function App() {
 
     return (
         <div className={`min-h-screen ${dark ? 'dark' : ''}`}>
-            <Darkmode  dark={dark} setDark={setDark}/>
+            <Navbar  dark={dark} setDark={setDark}/>
             <Header/>
             <Education/>
-            <Projects/>
+            <Portfolio/>
             <Skills/>
-            <Contact/>
+            <TextType className='flex items-center justify-center'
+            text={["THE BLOG IS COMING SOON", "STAY TUNED"]}
+            typingSpeed={75}
+            pauseDuration={1500}
+            showCursor
+            cursorCharacter="_"
+            texts={["Welcome to React Bits! Good to see you!","Build some amazing experiences!"]}
+            deletingSpeed={50}
+            variableSpeedEnabled={false}
+            variableSpeedMin={60}
+            variableSpeedMax={120}
+            cursorBlinkDuration={0.5}
+            />
             <Footer/>
         </div>
     );

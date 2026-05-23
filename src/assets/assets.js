@@ -5,6 +5,9 @@ import tailwind_logo from './tailwindlogo.png'
 import javascript_logo from './javascriptlogo.png'
 import realestate from './realest.png'
 import geopic from './image-asset.jpeg'
+import { FaReact } from 'react-icons/fa'
+import { RiTailwindCssFill } from 'react-icons/ri'
+import { SiNextdotjs } from 'react-icons/si'
 
 
 export const prof = {
@@ -15,17 +18,25 @@ export const prof = {
 export const projects = [
     {
       id: 1,
-      title: "Real Estate Website",
-      description: "A modern real estate website built with React and Tailwind CSS.",
+      title: "ABOABO",
+      description: "A centralised marketplace for student businesses in UDS.",
       image: realestate, 
-      link: "https://v5hqp79n-5176.uks1.devtunnels.ms/",
+      link: "https://aboabo.vercel.app/",
+      stack: [
+        { name: 'Next.js', icon: SiNextdotjs },
+        { name: 'Tailwind CSS', icon: RiTailwindCssFill }
+      ]
     },
     {
-        id: 2,
+      id: 2,
       title: "Geological Engineer Website",
       description: "A Landing Single Page Website.",
       image: geopic, 
       link: "https://geosumresources.netlify.app",
+      stack: [
+        { name: 'React', icon: FaReact },
+        { name: 'Tailwind CSS', icon: RiTailwindCssFill }
+      ]
     }
   ];
 
