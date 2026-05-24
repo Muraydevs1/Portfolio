@@ -46,3 +46,24 @@ export const projects = [
     { id: 3, name: "Tailwind CSS", icon: tailwind_logo},
     { id: 4, name: "SQL", icon: sql_logo },
   ];
+
+
+export const educationData = [
+  {
+    date: "2022 - Present",
+    title: "BSc. Computer Science",
+    description: "University for Development Studies (UDS)",
+    variant: "default",
+  },
+  
+];
+
+export const achievementData = [
+  {
+    date: "2021",
+    title: "VB.Net Certification",
+    description: "CKT-UTAS Bootcamp",
+    variant: "secondary",
+  },
+  
+];

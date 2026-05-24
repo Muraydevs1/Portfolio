@@ -17,7 +17,7 @@ function Skills() {
         </h2>
 
         <p className="text-gray-400 mb-16">
-          A collection of projects showcasing Frontend Skills.
+          A collection of tools i use showcasing my Skills.
         </p>
 
       </div>

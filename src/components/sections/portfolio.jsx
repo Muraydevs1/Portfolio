@@ -18,24 +18,24 @@ function Portfolio() {
         </h2>
 
         <p className="text-gray-400 mb-16">
-          A collection of projects showcasing Frontend Skills.
+          A collection of projects i have worked on.
         </p>
 
         {/* Project Card */}
         <div className='grid grid-cols-1'>{
             projects.map((project)=>(
-             <div key={project.id} className="border border-gray-800 rounded-2xl p-10 hover:border-gray-600 transition mb-6">
+             <div key={project.id} className="border border-dashed border-gray-800 rounded-2xl p-6 hover:border-gray-600 transition mb-4">
 
           <div className="flex gap-6">
 
             <span className="text-gray-500">{project.id}</span>
 
             <div>
-              <h3 className="text-2xl font-semibold mb-4">
+              <h3 className="text-2xl font-semibold mb-2">
                 {project.title}
               </h3>
 
-              <p className="text-gray-400 mb-6">
+              <p className="text-gray-400 mb-2">
                 {project.description}
               </p>
 
