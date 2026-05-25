@@ -17,7 +17,7 @@ function Education() {
         EDUCATION
         </p>
 
-        <h2 className="text-5xl font-bold mb-6">
+        <h2 className="text-4xl md:text-5xl font-bold mb-6">
         Educational Milestones and Achivements.
         </h2>
 

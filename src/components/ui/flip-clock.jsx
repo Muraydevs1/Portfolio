@@ -2,9 +2,9 @@ import React, { useEffect, useMemo, useState } from "react";
 
 const sizeStyles = {
   sm: {
-    card: "w-7 h-9 text-sm",
-    separator: "text-sm",
-    gap: "gap-1",
+    card: "w-4 h-6 text-xs sm:w-7 sm:h-9 sm:text-sm",
+    separator: "text-xs sm:text-sm",
+    gap: "gap-0.5 sm:gap-1",
   },
   md: {
     card: "w-8 h-10 text-base",

@@ -13,7 +13,7 @@ function Portfolio() {
           PROJECTS
         </p>
 
-        <h2 className="text-5xl font-bold mb-6">
+        <h2 className=" text-4xl md:text-5xl font-bold mb-6">
           Couple of Projects i Have Done.
         </h2>
 
@@ -79,7 +79,7 @@ function Portfolio() {
         </div>
         ))}</div>
       </div>
-    </section>
+    </section> 
   ) 
 }
 

@@ -12,7 +12,7 @@ function Skills() {
           Skills
         </p>
 
-        <h2 className="text-5xl font-bold mb-6">
+        <h2 className="text-4xl md:text-5xl font-bold mb-6">
           Tools I work with.
         </h2>
 
