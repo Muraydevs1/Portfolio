@@ -10,6 +10,8 @@ import { RiTailwindCssFill } from 'react-icons/ri'
 import { SiNextdotjs } from 'react-icons/si'
 import { SiExpress } from "react-icons/si";
 import { AiFillOpenAI } from "react-icons/ai";
+import { BiLogoPostgresql } from "react-icons/bi";
+import { SiClerk } from "react-icons/si";
 
 
 export const prof = {
@@ -21,11 +23,13 @@ export const projects = [
     {
       id: 1,
       title: "ABOABO",
-      description: "A campus-focused marketplace designed to help student entrepreneurs at UDS reach more customers through a single digital platform. ABOABO enables verified student sellers to list products and services while allowing buyers to browse, search, and connect securely, reducing reliance on scattered social media sales channels.",
+      description: "A campus focused marketplace designed to help student entrepreneurs at UDS reach more customers through a single digital platform. ABOABO enables verified student sellers to list products and services while allowing buyers to browse, search, and connect securely, reducing reliance on scattered social media sales channels.",
       image: realestate, 
       link: "https://aboabo.vercel.app/",
       stack: [
         { name: 'Next.js', icon: SiNextdotjs },
+        { name: 'Postgresql', icon: BiLogoPostgresql },
+        { name: 'Clerk', icon: SiClerk },
         { name: 'Tailwind CSS', icon: RiTailwindCssFill }
       ]
     },

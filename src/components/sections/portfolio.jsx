@@ -46,7 +46,7 @@ function Portfolio() {
                   return (
                     <span
                       key={`${project.id}-${tech.name}`}
-                      className="flex items-center justify-center h-11 w-11 rounded-full text-xl text-gray-400 hover:text-white transition-colors"
+                      className="flex items-center justify-center h-11 w-11 rounded-full text-xl text-gray-400 hover:text-gray-800 transition-colors"
                       title={tech.name}
                       aria-label={tech.name}
                     >
