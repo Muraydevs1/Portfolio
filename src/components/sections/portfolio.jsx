@@ -1,6 +1,8 @@
 import React from 'react'
 import { projects } from '../../assets/assets'
 import { Globe } from 'lucide-react'
+import { FaLink } from "react-icons/fa6";
+
 
 
 function Portfolio() {
@@ -63,7 +65,7 @@ function Portfolio() {
                   rel="noreferrer"
                   aria-label="View Project"
                 >
-                  <Globe className="h-6 w-6" />
+                  <FaLink className="h-6 w-6 text-gray-400 hover:text-gray-800 dark:hover:text-white" />
                   <span className="pointer-events-none absolute -top-9 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-md bg-white px-2 py-1 text-xs text-black opacity-0 transition-opacity group-hover:opacity-100">
                     View Project
                   </span>
