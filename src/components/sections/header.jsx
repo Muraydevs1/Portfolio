@@ -19,16 +19,16 @@ function Header() {
                 
                 <div className='flex justify-center md:justify-start gap-6 mt-4'>
                     <a href='https://x.com/shakespoppi' className='transition-transform transform hover:cursor-pointer hover:scale-110'>
-                        <FaXTwitter className='w-5 h-5 md:w-6 md:h-6 dark:text-neutral-500 dark:hover:text-white'/>
+                        <FaXTwitter className='w-5 h-5 md:w-6 md:h-6 dark:text-neutral-500 dark:hover:text-white text-gray-400 hover:text-gray-800'/>
                     </a>
                     <a href='https://github.com/Muraydevs1' className='transition-transform transform hover:cursor-pointer hover:scale-110'>
-                        <FaGithub className='w-5 h-5 md:w-6 md:h-6 dark:text-neutral-500 dark:hover:text-white'/>
+                        <FaGithub className='w-5 h-5 md:w-6 md:h-6 dark:text-neutral-500 dark:hover:text-white text-gray-400 hover:text-gray-800'/>
                     </a>
                     <a href='https://discord.com/users/1350273264966176831' className='transition-transform transform hover:cursor-pointer hover:scale-110'>
-                        <FaDiscord className='w-5 h-5 md:w-6 md:h-6 dark:text-neutral-500 dark:hover:text-white'/>
+                        <FaDiscord className='w-5 h-5 md:w-6 md:h-6 dark:text-neutral-500 dark:hover:text-white text-gray-400 hover:text-gray-800'/>
                     </a>
                      <a href='mailto:amuricharlesrameom@gmail.com' className='transition-transform transform hover:cursor-pointer hover:scale-110'>
-                        <BiLogoGmail className='w-5 h-5 md:w-6 md:h-6 dark:text-neutral-500 dark:hover:text-white'/>
+                        <BiLogoGmail className='w-5 h-5 md:w-6 md:h-6 dark:text-neutral-500 dark:hover:text-white text-gray-400 hover:text-gray-800'/>
                     </a>
                 </div>
                 <p className='mt-6 text-gray-400 text-sm md:text-lg max-w-lg leading-relaxed text-center md:text-left'>
