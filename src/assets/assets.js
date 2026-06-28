@@ -38,7 +38,7 @@ export const projects = [
       title: "CodeXplain",
       description: "CodeXplain is an AI-powered web application that simplifies complex code by generating clear, beginner-friendly explanations from pasted code snippets. Using OpenAI APIs, it helps developers quickly understand, learn, and share code insights through an intuitive interface.",
       image: null, 
-      link: "github.com/Muraydevs1/CodeXplainer",
+      link: "https://github.com/Muraydevs1/CodeXplainer",
       stack: [
         { name: 'React', icon: FaReact },
         { name: 'Express', icon: SiExpress },
