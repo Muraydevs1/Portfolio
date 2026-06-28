@@ -48,7 +48,7 @@ export const projects = [
     },
     {
       id: 2,
-      title: "GeoSum Website",
+      title: "GeoSum",
       description: "A Landing Page Site for GeoSum Resources Ltd.",
       image: geopic, 
       link: "https://geosumresources.netlify.app",
