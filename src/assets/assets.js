@@ -8,6 +8,8 @@ import geopic from './image-asset.jpeg'
 import { FaReact } from 'react-icons/fa'
 import { RiTailwindCssFill } from 'react-icons/ri'
 import { SiNextdotjs } from 'react-icons/si'
+import { SiExpress } from "react-icons/si";
+import { AiFillOpenAI } from "react-icons/ai";
 
 
 export const prof = {
@@ -19,7 +21,7 @@ export const projects = [
     {
       id: 1,
       title: "ABOABO",
-      description: "A centralised marketplace for student businesses in UDS.",
+      description: "A campus-focused marketplace designed to help student entrepreneurs at UDS reach more customers through a single digital platform. ABOABO enables verified student sellers to list products and services while allowing buyers to browse, search, and connect securely, reducing reliance on scattered social media sales channels.",
       image: realestate, 
       link: "https://aboabo.vercel.app/",
       stack: [
@@ -29,8 +31,21 @@ export const projects = [
     },
     {
       id: 2,
-      title: "Geological Engineer Website",
-      description: "A Landing Single Page Website.",
+      title: "CodeXplain",
+      description: "CodeXplain is an AI-powered web application that simplifies complex code by generating clear, beginner-friendly explanations from pasted code snippets. Using OpenAI APIs, it helps developers quickly understand, learn, and share code insights through an intuitive interface.",
+      image: null, 
+      link: "github.com/Muraydevs1/CodeXplainer",
+      stack: [
+        { name: 'React', icon: FaReact },
+        { name: 'Express', icon: SiExpress },
+        { name: 'OpenAi', icon: AiFillOpenAI },
+        { name: 'Tailwind CSS', icon: RiTailwindCssFill }
+      ]
+    },
+    {
+      id: 2,
+      title: "GeoSum Website",
+      description: "A Landing Page Site for GeoSum Resources Ltd.",
       image: geopic, 
       link: "https://geosumresources.netlify.app",
       stack: [
