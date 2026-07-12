@@ -7,9 +7,9 @@ const TimelineContext = createContext({
 });
 
 const variantStyles = {
-  default: "bg-blue-600 border-blue-600",
-  secondary: "bg-gray-500 border-gray-500",
-  outline: "bg-white dark:bg-black border-gray-400",
+  default: "bg-neutral-900 border-neutral-900 dark:bg-neutral-100 dark:border-neutral-100",
+  secondary: "bg-neutral-400 border-neutral-400 dark:bg-neutral-600 dark:border-neutral-600",
+  outline: "bg-white dark:bg-neutral-950 border-neutral-400 dark:border-neutral-600",
   destructive: "bg-red-600 border-red-600",
 };
 
@@ -41,19 +41,19 @@ export function TimelineItem({ children, variant = "default", className = "" }) 
     return (
       <div className={`min-w-[240px] max-w-[280px] ${className}`.trim()}>
         <div className={`w-3 h-3 rounded-full border-2 mb-4 ${variantStyles[variant] || variantStyles.default}`} />
-        <div className={noCards ? "" : "rounded-xl border border-gray-200 dark:border-gray-800 p-4"}>{children}</div>
+        <div className={noCards ? "" : "rounded-xl border border-neutral-200 dark:border-white/10 p-4"}>{children}</div>
       </div>
     );
   }
 
   return (
     <div className={`relative pl-10 ${className}`.trim()} style={{ marginBottom: `${vertItemSpacing}px` }}>
-      <span className="absolute left-4 top-1 bottom-[-48px] w-px bg-gray-300 dark:bg-gray-700" aria-hidden="true" />
+      <span className="absolute left-4 top-1 bottom-[-48px] w-px bg-neutral-200 dark:bg-white/10" aria-hidden="true" />
       <span
         className={`absolute left-[10px] top-2 w-3 h-3 rounded-full border-2 ${variantStyles[variant] || variantStyles.default}`}
         aria-hidden="true"
       />
-      <div className={noCards ? "" : "rounded-xl border border-gray-200 dark:border-gray-800 p-4 bg-white/60 dark:bg-white/5"}>
+      <div className={noCards ? "" : "rounded-xl border border-neutral-200 dark:border-white/10 p-4 bg-white/60 dark:bg-white/5"}>
         {children}
       </div>
     </div>
@@ -61,7 +61,7 @@ export function TimelineItem({ children, variant = "default", className = "" }) 
 }
 
 export function TimelineItemDate({ children, className = "" }) {
-  return <p className={`text-sm text-gray-500 mb-1 ${className}`.trim()}>{children}</p>;
+  return <p className={`font-pixel text-sm text-neutral-500 dark:text-neutral-400 mb-1 ${className}`.trim()}>{children}</p>;
 }
 
 export function TimelineItemTitle({ children, className = "" }) {
@@ -69,7 +69,7 @@ export function TimelineItemTitle({ children, className = "" }) {
 }
 
 export function TimelineItemDescription({ children, className = "" }) {
-  return <p className={`text-gray-500 mt-2 ${className}`.trim()}>{children}</p>;
+  return <p className={`text-neutral-500 dark:text-neutral-400 mt-2 ${className}`.trim()}>{children}</p>;
 }
 
 export default Timeline;

@@ -47,7 +47,7 @@ export const projects = [
       ]
     },
     {
-      id: 2,
+      id: 3,
       title: "GeoSum",
       description: "A Landing Page Site for GeoSum Resources Ltd.",
       image: geopic, 

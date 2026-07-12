@@ -2,33 +2,37 @@ import React, { useEffect, useMemo, useState } from "react";
 
 const sizeStyles = {
   sm: {
-    card: "w-4 h-6 text-xs sm:w-7 sm:h-9 sm:text-sm",
-    separator: "text-xs sm:text-sm",
-    gap: "gap-0.5 sm:gap-1",
+    card: "size-5 text-[10px] sm:size-6 sm:text-xs",
+    separator: "text-[10px] sm:text-xs",
+    container: "h-7 sm:h-8",
+    gap: "gap-0.5",
   },
   md: {
-    card: "w-8 h-10 text-base",
-    separator: "text-base",
-    gap: "gap-1.5",
+    card: "size-6 text-xs",
+    separator: "text-xs",
+    container: "h-8",
+    gap: "gap-0.5",
   },
   lg: {
-    card: "w-10 h-12 text-lg",
-    separator: "text-lg",
-    gap: "gap-2",
+    card: "size-7 text-sm",
+    separator: "text-sm",
+    container: "h-9",
+    gap: "gap-1",
   },
   xl: {
-    card: "w-12 h-14 text-xl",
-    separator: "text-xl",
-    gap: "gap-2.5",
+    card: "size-8 text-base",
+    separator: "text-base",
+    container: "h-10",
+    gap: "gap-1",
   },
 };
 
 const variantStyles = {
-  default: "bg-black text-white border-black dark:bg-white dark:text-black dark:border-white",
-  secondary: "bg-gray-200 text-gray-900 border-gray-300 dark:bg-gray-800 dark:text-white dark:border-gray-700",
-  destructive: "bg-red-600 text-white border-red-700 dark:bg-red-700 dark:border-red-800",
-  outline: "bg-transparent text-black border-gray-400 dark:text-white dark:border-gray-600",
-  muted: "bg-gray-100 text-gray-600 dark:bg-gray-900 dark:text-gray-300",
+  default: "bg-neutral-900 text-neutral-50 dark:bg-neutral-100 dark:text-neutral-900",
+  secondary: "bg-neutral-200 text-neutral-900 dark:bg-neutral-700 dark:text-neutral-50",
+  destructive: "bg-red-600 text-white dark:bg-red-700",
+  outline: "bg-transparent text-neutral-950 ring-1 ring-inset ring-neutral-300 dark:text-neutral-50 dark:ring-neutral-700",
+  muted: "bg-neutral-100 text-neutral-600 dark:bg-neutral-800 dark:text-neutral-300",
 };
 
 function twoDigits(value) {
@@ -55,24 +59,28 @@ function FlipClock({ size = "md", variant = "default", className = "" }) {
 
   const selectedSize = sizeStyles[size] || sizeStyles.md;
   const selectedVariant = variantStyles[variant] || variantStyles.default;
-  const borderClass = variant === "muted" ? "border-transparent" : "border";
 
   return (
-    <div className={`flex items-center ${selectedSize.gap} ${className}`.trim()} aria-label="Current time clock">
+    <div
+      className={`relative isolate inline-flex items-center rounded-full border border-dotted border-neutral-200 px-1 dark:border-white/10 ${selectedSize.container} ${selectedSize.gap} ${className}`.trim()}
+      aria-label="Current time clock"
+    >
       {timeParts.map((digit, index) => {
         const needsSeparator = index === 1 || index === 3;
 
         return (
           <React.Fragment key={`${index}-${digit}`}>
             <div
-              className={`relative rounded-md ${borderClass} font-bold flex items-center justify-center overflow-hidden ${selectedSize.card} ${selectedVariant}`}
+              className={`flex items-center justify-center rounded-full font-pixel transition-colors duration-200 ease-out ${selectedSize.card} ${selectedVariant}`}
             >
-              <span className="absolute top-1/2 left-0 right-0 h-px bg-black/15 dark:bg-white/15" aria-hidden="true" />
               {digit}
             </div>
 
             {needsSeparator ? (
-              <span className={`font-bold text-gray-500 dark:text-gray-300 ${selectedSize.separator}`} aria-hidden="true">
+              <span
+                className={`font-pixel text-neutral-500 dark:text-neutral-400 ${selectedSize.separator}`}
+                aria-hidden="true"
+              >
                 :
               </span>
             ) : null}

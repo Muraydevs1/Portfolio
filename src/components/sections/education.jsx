@@ -13,7 +13,7 @@ function Education() {
     <section id="education" className="py-12 mb-16 px-6 max-w-6xl mx-auto">
       
         {/* Section Header */}
-        <p className="text-sm tracking-[0.3em] text-gray-400 mb-6">
+        <p className="font-pixel text-sm tracking-[0.3em] uppercase text-neutral-500 dark:text-neutral-400 mb-6">
         EDUCATION
         </p>
 
@@ -21,7 +21,7 @@ function Education() {
         Educational Milestones and Achivements.
         </h2>
 
-        <p className="text-gray-400 mb-16">
+        <p className="text-neutral-500 dark:text-neutral-400 mb-16">
           A couple of steps i have made in Journey.
         </p>
 
@@ -31,7 +31,7 @@ function Education() {
           <Timeline orientation="vertical" vertItemSpacing={36} noCards>
             {educationData.map((item, idx) => (
               <TimelineItem key={idx} variant={item.variant}>
-                <div className="rounded-xl border border-dashed border-gray-800 p-4 hover:border-gray-600 transition">
+                <div className="rounded-xl border border-dashed border-neutral-200 hover:border-neutral-400 dark:border-white/10 dark:hover:border-white/25 p-4 transition-colors duration-200">
                   <TimelineItemDate>{item.date}</TimelineItemDate>
                   <TimelineItemTitle>{item.title}</TimelineItemTitle>
                   <TimelineItemDescription>{item.description}</TimelineItemDescription>
@@ -46,7 +46,7 @@ function Education() {
           <Timeline orientation="vertical" vertItemSpacing={36} noCards>
             {achievementData.map((item, idx) => (
               <TimelineItem key={idx} variant={item.variant}>
-                <div className="rounded-xl border border-dashed border-gray-800 p-4 hover:border-gray-600 transition">
+                <div className="rounded-xl border border-dashed border-neutral-200 hover:border-neutral-400 dark:border-white/10 dark:hover:border-white/25 p-4 transition-colors duration-200">
                   <TimelineItemDate>{item.date}</TimelineItemDate>
                   <TimelineItemTitle>{item.title}</TimelineItemTitle>
                   <TimelineItemDescription>{item.description}</TimelineItemDescription>

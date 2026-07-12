@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import emailjs from '@emailjs/browser';
 import {TbSend2} from 'react-icons/tb';
 
+const fieldClass = "w-full p-3 rounded-lg bg-white text-neutral-950 placeholder-neutral-400 border border-neutral-200 dark:bg-neutral-900 dark:text-neutral-50 dark:placeholder-neutral-500 dark:border-white/10 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-neutral-400 dark:focus:ring-neutral-600";
+
 function Contact() {
   const [formData, setFormData] = useState({
     name: "",
@@ -54,7 +56,7 @@ function Contact() {
           value={formData.name}
           onChange={handleChange}
           placeholder="Your Name"
-          className="w-full p-3 rounded-lg dark:bg-gray-800 border border-gray-200 dark:border-none text-white focus:ring-2 focus:ring-blue-500"
+          className={fieldClass}
           required
         />
 
@@ -64,7 +66,7 @@ function Contact() {
           value={formData.email}
           onChange={handleChange}
           placeholder="Your Email"
-          className="w-full p-3 rounded-lg dark:bg-gray-800 border border-gray-200 dark:border-none text-white focus:ring-2 focus:ring-blue-500"
+          className={fieldClass}
           required
         />
 
@@ -74,7 +76,7 @@ function Contact() {
           value={formData.subject}
           onChange={handleChange}
           placeholder="Email Subject"
-          className="w-full p-3 rounded-lg dark:bg-gray-800 border border-gray-200 dark:border-none text-white focus:ring-2 focus:ring-blue-500"
+          className={fieldClass}
           required
         />
 
@@ -84,20 +86,19 @@ function Contact() {
           onChange={handleChange}
           placeholder="Your message..."
           rows="5"
-          className="w-full p-3 rounded-lg dark:bg-gray-800 border border-gray-200 dark:border-none text-white focus:ring-2 focus:ring-blue-500"
+          className={fieldClass}
           required
         ></textarea>
 
         <button
           type="submit"
-          className="w-full py-3 bg-blue-400 hover:bg-blue-600 rounded-lg text-lg font-semibold flex items-center justify-center
-          transition-all duration-300 hover:scale-105"
+          className="w-full py-3 bg-neutral-950 text-white hover:bg-neutral-800 dark:bg-white dark:text-neutral-950 dark:hover:bg-neutral-200 rounded-lg text-lg font-semibold flex items-center justify-center transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-neutral-400 focus-visible:ring-offset-2 focus-visible:ring-offset-white dark:focus-visible:ring-neutral-600 dark:focus-visible:ring-offset-neutral-950"
         >
           Send Message <span className="px-2"><TbSend2/> </span>
         </button>
       </form>
 
-      {status && <p className="mt-4 text-lg text-green-400">{status}</p>}
+      {status && <p className="mt-4 text-lg text-green-600 dark:text-green-400">{status}</p>}
     </section>
   );
 }

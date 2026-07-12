@@ -6,7 +6,13 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: ['"Quantico"', 'sans-serif'],
+        pixel: ['"Geist Pixel"', 'monospace'],
+        handwriting: ['"Caveat"', 'cursive'],
+      },
+    },
   },
   plugins: [],
 }

@@ -8,7 +8,7 @@ function Skills() {
     <section id="skills" className="py-24 px-6 max-w-6xl mx-auto ">
       <div>
          {/* Section Header */}
-        <p className="text-sm tracking-[0.3em] text-gray-400 mb-6">
+        <p className="font-pixel text-sm tracking-[0.3em] uppercase text-neutral-500 dark:text-neutral-400 mb-6">
           Skills
         </p>
 
@@ -16,7 +16,7 @@ function Skills() {
           Tools I work with.
         </h2>
 
-        <p className="text-gray-400 mb-16">
+        <p className="text-neutral-500 dark:text-neutral-400 mb-16">
           A collection of tools i use showcasing my Skills.
         </p>
 
